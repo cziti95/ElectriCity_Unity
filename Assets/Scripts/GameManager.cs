@@ -209,10 +209,10 @@ public class GameManager : MonoBehaviour
 
     private void FirstRunTutorial()
     {
-        if (!PlayerPrefs.HasKey("TestFR"))
+        if (!PlayerPrefs.HasKey("FirstRun"))
         {
             UiManager.instance.EnableTutorial();
-            PlayerPrefs.SetInt("TestFR", 0);
+            PlayerPrefs.SetInt("FirstRun", 0);
         }
     }
 }
